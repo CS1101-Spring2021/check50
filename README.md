@@ -6,16 +6,6 @@ You can find documentation and instructions for writing your own checks at https
 
 ## CS1101 Specific Instructions
 
-### Pushing to the right Repo
-
-⚠ If you clone this repository, using the script to push is not required. This is only if you cloned the original repository and added this repo as a remote named `cs1101 `.
-
-After committing your changes, use the shell script included with the repository to push your commits to the Organisation repository.
-```sh
-$ bash cs1101push.sh
-```
-If you want, you can change the permissions of the file and run it as an executable.
-
 ### Installing this check50
 
 Uninstall the default check50 package from your device.
@@ -27,3 +17,13 @@ Clone this repository and don't `cd` into it. Now install this version of check5
 ```sh
 $ python3 -m pip install -e check50
 ```
+
+### Pushing to the right Repo
+
+⚠ If you clone this repository, using the script to push is not required. This is only if you cloned the original repository and added this repo as a remote named `cs1101 `.
+
+After committing your changes, use the shell script included with the repository to push your commits to the Organisation repository.
+```sh
+$ bash cs1101push.sh
+```
+If you want, you can change the permissions of the file and run it as an executable.
