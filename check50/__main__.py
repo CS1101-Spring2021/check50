@@ -402,9 +402,11 @@ def main():
                 else:
                     if args.local:
                         html = renderer.to_html(**results)
-                        with tempfile.NamedTemporaryFile(mode="w", delete=False, suffix=".html") as html_file:
-                            html_file.write(html)
-                        url = f"file://{html_file.name}"
+                        output_file.write(html)
+                        url = f"file://{output_file.name}"
+                        # with tempfile.NamedTemporaryFile(mode="w", delete=False, suffix=".html") as html_file:
+                        #     html_file.write(html)
+                        # url = f"file://{html_file.name}"
                     else:
                         url = f"https://submit.cs50.io/check50/{tag_hash}"
 
